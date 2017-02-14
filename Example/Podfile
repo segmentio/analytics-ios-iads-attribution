@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+
+target 'Analytics-iAds-Attribution_Example' do
+  pod 'Analytics-iAds-Attribution', :path => '../'
+  pod 'Analytics', '3.5.7'
+
+  target 'Analytics-iAds-Attribution_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
