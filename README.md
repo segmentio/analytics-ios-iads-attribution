@@ -50,8 +50,10 @@ pod "Analytics-iAds-Attribution"
 SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"<YOUR_WRITE_KEY>"];
 [SEGAnalytics setupWithConfiguration:configuration];
 
-// Instruct the tracker to record iAd attribution information your initialized client.
-[SEGADTracker trackWithAnalytics:[SEGAnalytics sharedAnalytics]];
+// Instruct the tracker to track iAd attribution information on the first run using the initialized client.
+if ([self isFirstRun]) {
+  [SEGADTracker trackWithAnalytics:[SEGAnalytics sharedAnalytics]];
+}
 ```
 
 ## Author
