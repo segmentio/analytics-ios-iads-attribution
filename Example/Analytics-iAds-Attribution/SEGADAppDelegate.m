@@ -7,14 +7,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Initialize the analytics client as normally.
+    // Initialize the analytics client as you would normally.
     // https://segment.com/segment-mobile/sources/ios/settings/keys
     SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"H18ZaUENQGcg4t7mJnYt1XrgG5vNkULh"];
+
+    // Configure the client with the iAD middleware.
+    configuration.middlewares = @[ [SEGADTracker middleware] ];
+
     [SEGAnalytics setupWithConfiguration:configuration];
     [SEGAnalytics debug:YES];
-
-    // Instruct the tracker to use your initialized client.
-    [SEGADTracker trackWithAnalytics:[SEGAnalytics sharedAnalytics]];
 
     return YES;
 }

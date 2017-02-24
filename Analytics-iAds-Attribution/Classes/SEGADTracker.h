@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
-#import <Analytics/SEGAnalytics.h>
+#import <Analytics/SEGMiddleware.h>
 
 
-@interface SEGADTracker : NSObject
+@interface SEGADTracker : NSObject <SEGMiddleware>
 
-+ (void)trackWithAnalytics:(SEGAnalytics *)analytics;
++ (id<SEGMiddleware>)middleware;
 
 @end
