@@ -1,17 +1,16 @@
 # Analytics-iAds-Attribution
 
-[![CI Status](http://img.shields.io/travis/segmentio/analytics-ios-iads-attribution.svg?style=flat)](https://travis-ci.org/segmentio/analytics-ios-iads-attribution)
 [![Version](https://img.shields.io/cocoapods/v/Analytics-iAds-Attribution.svg?style=flat)](http://cocoapods.org/pods/Analytics-iAds-Attribution)
 [![License](https://img.shields.io/cocoapods/l/Analytics-iAds-Attribution.svg?style=flat)](http://cocoapods.org/pods/Analytics-iAds-Attribution)
 [![Platform](https://img.shields.io/cocoapods/p/Analytics-iAds-Attribution.svg?style=flat)](http://cocoapods.org/pods/Analytics-iAds-Attribution)
 
 Records [iAd attribution information](http://searchads.apple.com/help/measure-results/) using [analytics-ios](https://github.com/segmentio/analytics-ios).
 
-When it is able to retrieve iAd information, it will send an `Install Attributed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#install-attributed). The attribution information is transformed to Segment properties
+When it is able to retrieve iAd information, it will send an `Application Installed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#application-installed). The attribution information is transformed to Segment properties
 this way:
 
 ```obj-c
-[analytics track:@"Install Attributed" properties:@{
+[analytics track:@"Application Installed" properties:@{
     @"provider" : @"Apple",
     @"click_date" : attributionInfo[@"iad-click-date"],
     @"conversion_date" : attributionInfo[@"iad-conversion-date"],
@@ -35,25 +34,28 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-Analytics-iAds-Attribution is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Analytics-iAds-Attribution is available through [CocoaPods](http://cocoapods.org). This pod requires version 3.6.0 or higher of the `Analytics` pod. To install it, simply add the following line to your Podfile:
 
 ```ruby
+pod "Analytics"
 pod "Analytics-iAds-Attribution"
 ```
 
 ```obj-c
 #import <Analytics-iAds-Attribution/SEGADTracker.h>
 
-// Initialize the analytics client as you would normally.
+// Initialize the configuration as you would normally.
 // https://segment.com/segment-mobile/sources/ios/settings/keys
-SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"<YOUR_WRITE_KEY>"];
-[SEGAnalytics setupWithConfiguration:configuration];
+SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"YOUR_WRITE_KEY"];
+...
 
-// Instruct the tracker to track iAd attribution information on the first run using the initialized client.
-if ([self isFirstRun]) {
-  [SEGADTracker trackWithAnalytics:[SEGAnalytics sharedAnalytics]];
-}
+// Configure the client to automatically track the 'Application Installed' event.
+configuration.trackApplicationLifecycleEvents = YES;
+
+// Configure the client with the iAD middleware to attach iAd properties.
+configuration.middlewares = @[ [SEGADTracker middleware] ];
+
+[SEGAnalytics setupWithConfiguration:configuration];
 ```
 
 ## Author
