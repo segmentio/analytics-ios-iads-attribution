@@ -6,8 +6,7 @@
 
 Records [iAd attribution information](http://searchads.apple.com/help/measure-results/) using [analytics-ios](https://github.com/segmentio/analytics-ios).
 
-When it is able to retrieve iAd information, it will send an `Application Installed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#application-installed). The attribution information is transformed to Segment properties
-this way:
+When it is able to retrieve iAd information, it will augment the `Application Installed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#application-installed). The attribution information is transformed to Segment properties this way:
 
 ```obj-c
 [analytics track:@"Application Installed" properties:@{
