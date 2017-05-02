@@ -26,6 +26,8 @@ this way:
 }];
 ```
 
+https://cloudup.com/cVmP8uJI4XD
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

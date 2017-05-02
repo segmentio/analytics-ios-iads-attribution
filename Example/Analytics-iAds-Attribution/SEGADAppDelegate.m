@@ -13,6 +13,7 @@
 
     // Configure the client with the iAD middleware.
     configuration.middlewares = @[ [SEGADTracker middleware] ];
+    configuration.trackApplicationLifecycleEvents = YES;
 
     [SEGAnalytics setupWithConfiguration:configuration];
     [SEGAnalytics debug:YES];
