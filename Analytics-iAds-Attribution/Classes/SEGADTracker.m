@@ -47,20 +47,21 @@
             return;
         }
 
-        NSDictionary *attributionProperties = @{
-            @"provider" : @"Apple",
-            @"click_date" : attributionInfo[@"iad-click-date"],
-            @"conversion_date" : attributionInfo[@"iad-conversion-date"],
-            @"campaign" : @{
-                @"source" : @"iAd",
-                @"name" : attributionInfo[@"iad-campaign-name"],
-                @"content" : attributionInfo[@"iad-keyword"],
-                @"ad_creative" : attributionInfo[@"iad-org-name"],
-                @"ad_group" : attributionInfo[@"iad-adgroup-name"],
-                @"id" : attributionInfo[@"iad-campaign-id"],
-                @"ad_group_id" : attributionInfo[@"iad-adgroup-id"]
-            }
-        };
+        // We're seeing cases where attributionInfo may contain nil fields, so we don't use the literal syntax.
+        NSMutableDictionary *campaign = [NSMutableDictionary dictionary];
+        [campaign setObject:@"iAd" forKey:@"source"];
+        [campaign setObject:attributionInfo[@"iad-campaign-name"] forKey:@"name"];
+        [campaign setObject:attributionInfo[@"iad-keyword"] forKey:@"content"];
+        [campaign setObject:attributionInfo[@"iad-org-name"] forKey:@"ad_creative"];
+        [campaign setObject:attributionInfo[@"iad-adgroup-name"] forKey:@"ad_group"];
+        [campaign setObject:attributionInfo[@"iad-campaign-id"] forKey:@"id"];
+        [campaign setObject:attributionInfo[@"iad-adgroup-id"] forKey:@"ad_group_id"];
+
+        NSMutableDictionary *attributionProperties = [NSMutableDictionary dictionary];
+        [attributionProperties setObject:@"Apple" forKey:@"provider"];
+        [attributionProperties setObject:attributionInfo[@"iad-click-date"] forKey:@"click_date"];
+        [attributionProperties setObject:attributionInfo[@"iad-conversion-date"] forKey:@"conversion_date"];
+        [attributionProperties setObject:campaign forKey:@"campaign"];
 
         NSMutableDictionary *properties = [NSMutableDictionary dictionaryWithCapacity:attributionProperties.count + track.properties.count];
         [properties addEntriesFromDictionary:attributionProperties];
