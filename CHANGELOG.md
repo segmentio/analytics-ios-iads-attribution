@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 2.0.1 *(5th June, 2017)*
+-------------------------------------
+
+ * Fix: Handle cases where attribution details might contain nil.
+
+
 Version 2.0.0 *(1st May, 2017)*
 -------------------------------------
 

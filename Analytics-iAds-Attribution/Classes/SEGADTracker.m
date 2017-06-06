@@ -49,16 +49,16 @@
 
         NSDictionary *attributionProperties = @{
             @"provider" : @"Apple",
-            @"click_date" : attributionInfo[@"iad-click-date"],
-            @"conversion_date" : attributionInfo[@"iad-conversion-date"],
+            @"click_date" : attributionInfo[@"iad-click-date"] ?: @"unknown",
+            @"conversion_date" : attributionInfo[@"iad-conversion-date"] ?: @"unknown",
             @"campaign" : @{
                 @"source" : @"iAd",
-                @"name" : attributionInfo[@"iad-campaign-name"],
-                @"content" : attributionInfo[@"iad-keyword"],
-                @"ad_creative" : attributionInfo[@"iad-org-name"],
-                @"ad_group" : attributionInfo[@"iad-adgroup-name"],
-                @"id" : attributionInfo[@"iad-campaign-id"],
-                @"ad_group_id" : attributionInfo[@"iad-adgroup-id"]
+                @"name" : attributionInfo[@"iad-campaign-name"] ?: @"unknown",
+                @"content" : attributionInfo[@"iad-keyword"] ?: @"unknown",
+                @"ad_creative" : attributionInfo[@"iad-org-name"] ?: @"unknown",
+                @"ad_group" : attributionInfo[@"iad-adgroup-name"] ?: @"unknown",
+                @"id" : attributionInfo[@"iad-campaign-id"] ?: @"unknown",
+                @"ad_group_id" : attributionInfo[@"iad-adgroup-id"] ?: @"unknown"
             }
         };
 
