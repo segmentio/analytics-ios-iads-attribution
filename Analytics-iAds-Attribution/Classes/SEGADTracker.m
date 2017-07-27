@@ -62,14 +62,14 @@
             }
         };
 
-        NSMutableDictionary *mergeContext = [NSMutableDictionary dictionaryWithCapacity:attributionContext.count + track.context.count];
-        [mergeContext addEntriesFromDictionary:attributionContext];
-        [mergeContext addEntriesFromDictionary:track.context];
+        NSMutableDictionary *mergedContext = [NSMutableDictionary dictionaryWithCapacity:attributionContext.count + track.context.count];
+        [mergedContext addEntriesFromDictionary:attributionContext];
+        [mergedContext addEntriesFromDictionary:track.context];
         
         SEGContext *newContext = [context modify:^(id<SEGMutableContext> _Nonnull ctx) {
             ctx.payload = [[SEGTrackPayload alloc] initWithEvent:track.event
                                                       properties:track.properties
-                                                         context:mergeContext
+                                                         context:mergedContext
                                                     integrations:track.integrations];
         }];
 
