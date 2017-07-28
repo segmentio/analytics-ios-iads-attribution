@@ -23,10 +23,6 @@
     }
 
     SEGTrackPayload *track =(SEGTrackPayload *)context.payload;
-    if (![track.event isEqualToString:@"Application Installed"]) {
-        next(context);
-        return;
-    }
 
     if (![[ADClient sharedClient] respondsToSelector:@selector(requestAttributionDetailsWithBlock:)]) {
         next(context);
