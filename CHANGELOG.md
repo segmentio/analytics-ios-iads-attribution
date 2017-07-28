@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 3.0.0 *(28th July, 2017)*
+-------------------------------------
+
+ * [Fix](https://github.com/segmentio/analytics-ios-iads-attribution/pull/5/files): Passes iAd attribution data through context instead of properties.
+ * Fix: To by pass FIFO issue with Kochava, sends iAd attribution data on all `track` events. 
+
 Version 2.0.1 *(5th June, 2017)*
 -------------------------------------
 
