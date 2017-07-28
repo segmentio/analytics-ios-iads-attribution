@@ -6,7 +6,7 @@
 
 Records [iAd attribution information](http://searchads.apple.com/help/measure-results/) using [analytics-ios](https://github.com/segmentio/analytics-ios).
 
-When it is able to retrieve iAd information, it will augment the `Application Installed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#application-installed). The attribution information is transformed to Segment context this way:
+When it is able to retrieve iAd information, it will augment all `track` events. The attribution information is transformed to Segment context this way:
 
 ```obj-c
 [analytics track:@"Application Installed",
@@ -49,12 +49,8 @@ pod "Analytics-iAds-Attribution"
 #import <Analytics-iAds-Attribution/SEGADTracker.h>
 
 // Initialize the configuration as you would normally.
-// https://segment.com/segment-mobile/sources/ios/settings/keys
 SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"YOUR_WRITE_KEY"];
 ...
-
-// Configure the client to automatically track the 'Application Installed' event.
-configuration.trackApplicationLifecycleEvents = YES;
 
 // Configure the client with the iAD middleware to attach iAd properties.
 configuration.middlewares = @[ [SEGADTracker middleware] ];
