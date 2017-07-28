@@ -6,14 +6,15 @@
 
 Records [iAd attribution information](http://searchads.apple.com/help/measure-results/) using [analytics-ios](https://github.com/segmentio/analytics-ios).
 
-When it is able to retrieve iAd information, it will augment the `Application Installed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#application-installed). The attribution information is transformed to Segment properties this way:
+When it is able to retrieve iAd information, it will augment the `Application Installed` event using the [Segment mobile spec](https://segment.com/docs/spec/mobile/#application-installed). The attribution information is transformed to Segment context this way:
 
 ```obj-c
-[analytics track:@"Application Installed" properties:@{
-    @"provider" : @"Apple",
-    @"click_date" : attributionInfo[@"iad-click-date"],
-    @"conversion_date" : attributionInfo[@"iad-conversion-date"],
-    @"campaign" : @{
+[analytics track:@"Application Installed",
+    @"context" : @{
+      @"campaign" : @{
+        @"provider" : @"Apple",
+        @"click_date" : attributionInfo[@"iad-click-date"],
+        @"conversion_date" : attributionInfo[@"iad-conversion-date"],
         @"source" : @"iAd",
         @"name" : attributionInfo[@"iad-campaign-name"],
         @"content" : attributionInfo[@"iad-keyword"],
@@ -21,11 +22,13 @@ When it is able to retrieve iAd information, it will augment the `Application In
         @"ad_group" : attributionInfo[@"iad-adgroup-name"],
         @"id" : attributionInfo[@"iad-campaign-id"],
         @"ad_group_id" : attributionInfo[@"iad-adgroup-id"]
+      }    
     }
 }];
 ```
 
-https://cloudup.com/cVmP8uJI4XD
+Because this information in passed through the `context` object, this will not be received by other downstream integrations, unless explicitly mapped. [Kochava](https://segment.com/docs/integrations/kochava/) is currently the only integration which supports Apple Search Ads.
+
 
 ## Example
 

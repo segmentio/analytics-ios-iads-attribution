@@ -22,11 +22,7 @@
         return;
     }
 
-    SEGTrackPayload *track = context.payload;
-    if (![track.event isEqualToString:@"Application Installed"]) {
-        next(context);
-        return;
-    }
+    SEGTrackPayload *track =(SEGTrackPayload *)context.payload;
 
     if (![[ADClient sharedClient] respondsToSelector:@selector(requestAttributionDetailsWithBlock:)]) {
         next(context);
@@ -47,10 +43,7 @@
             return;
         }
 
-        NSDictionary *attributionProperties = @{
-            @"provider" : @"Apple",
-            @"click_date" : attributionInfo[@"iad-click-date"] ?: @"unknown",
-            @"conversion_date" : attributionInfo[@"iad-conversion-date"] ?: @"unknown",
+        NSDictionary *attributionContext = @{
             @"campaign" : @{
                 @"source" : @"iAd",
                 @"name" : attributionInfo[@"iad-campaign-name"] ?: @"unknown",
@@ -58,18 +51,21 @@
                 @"ad_creative" : attributionInfo[@"iad-org-name"] ?: @"unknown",
                 @"ad_group" : attributionInfo[@"iad-adgroup-name"] ?: @"unknown",
                 @"id" : attributionInfo[@"iad-campaign-id"] ?: @"unknown",
-                @"ad_group_id" : attributionInfo[@"iad-adgroup-id"] ?: @"unknown"
+                @"ad_group_id" : attributionInfo[@"iad-adgroup-id"] ?: @"unknown",
+                @"provider" : @"Apple",
+                @"click_date" : attributionInfo[@"iad-click-date"] ?: @"unknown",
+                @"conversion_date" : attributionInfo[@"iad-conversion-date"] ?: @"unknown"
             }
         };
 
-        NSMutableDictionary *properties = [NSMutableDictionary dictionaryWithCapacity:attributionProperties.count + track.properties.count];
-        [properties addEntriesFromDictionary:attributionProperties];
-        [properties addEntriesFromDictionary:track.properties];
-
+        NSMutableDictionary *mergedContext = [NSMutableDictionary dictionaryWithCapacity:attributionContext.count + track.context.count];
+        [mergedContext addEntriesFromDictionary:attributionContext];
+        [mergedContext addEntriesFromDictionary:track.context];
+        
         SEGContext *newContext = [context modify:^(id<SEGMutableContext> _Nonnull ctx) {
             ctx.payload = [[SEGTrackPayload alloc] initWithEvent:track.event
-                                                      properties:properties
-                                                         context:track.context
+                                                      properties:track.properties
+                                                         context:mergedContext
                                                     integrations:track.integrations];
         }];
 
