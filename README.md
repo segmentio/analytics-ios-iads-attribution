@@ -27,7 +27,7 @@ When it is able to retrieve iAd information, it will augment all `track` events.
 }];
 ```
 
-Because this information in passed through the `context` object, this will not be received by other downstream integrations, unless explicitly mapped. [Kochava](https://segment.com/docs/integrations/kochava/) is currently the only integration which supports Apple Search Ads.
+Because this information is passed through the `context` object, this will not be received by other downstream integrations, unless explicitly mapped. [Kochava](https://segment.com/docs/integrations/kochava/) and [Kitemetrics](https://segment.com/integrations/kitemetrics/) are currently the only integrations which support Apple Search Ads.
 
 
 ## Example
@@ -45,6 +45,7 @@ pod "Analytics"
 pod "Analytics-iAds-Attribution"
 ```
 
+Objective-C
 ```obj-c
 #import <Analytics-iAds-Attribution/SEGADTracker.h>
 
@@ -56,6 +57,20 @@ SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurat
 configuration.middlewares = @[ [SEGADTracker middleware] ];
 
 [SEGAnalytics setupWithConfiguration:configuration];
+```
+
+Swift
+```swift
+import Analytics_iAds_Attribution
+
+// Initialize the configuration as you would normally.
+let configuration = SEGAnalyticsConfiguration(writeKey: "YOUR_WRITE_KEY")
+...
+
+// Configure the client with the iAD middleware to attach iAd properties.
+configuration.middlewares = [SEGADTracker.middleware()]
+
+SEGAnalytics.setup(with: configuration)
 ```
 
 ## Author
