@@ -22,5 +22,5 @@ Analytics-iAds-Attribution requests iAd attribution information and sends a trac
 
   s.source_files = 'Analytics-iAds-Attribution/Classes/**/*'
 
-  s.dependency 'Analytics', '~> 3.6.0'
+  s.dependency 'Analytics', '~> 3.7.0'
 end
