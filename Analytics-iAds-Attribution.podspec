@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Analytics-iAds-Attribution'
-  s.version          = '3.0.0'
+  s.version          = '3.0.1'
   s.summary          = 'Measure iAds attribution data with analytics-ios.'
 
   s.description      = <<-DESC
