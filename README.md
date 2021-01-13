@@ -53,7 +53,7 @@ SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurat
 ...
 
 // Configure the client with the iAD middleware to attach iAd properties.
-configuration.middlewares = @[ [SEGADTracker middleware] ];
+configuration.sourceMiddleware = @[ [SEGADTracker middleware] ];
 
 [SEGAnalytics setupWithConfiguration:configuration];
 ```
