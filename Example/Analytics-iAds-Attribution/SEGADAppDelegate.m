@@ -12,7 +12,7 @@
     SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"H18ZaUENQGcg4t7mJnYt1XrgG5vNkULh"];
 
     // Configure the client with the iAD middleware.
-    configuration.middlewares = @[ [SEGADTracker middleware] ];
+    configuration.sourceMiddleware = @[ [SEGADTracker middleware] ];
     configuration.trackApplicationLifecycleEvents = YES;
     configuration.flushAt = 1;
     [SEGAnalytics setupWithConfiguration:configuration];

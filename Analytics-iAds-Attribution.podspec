@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Analytics-iAds-Attribution'
-  s.version          = '3.0.0'
+  s.version          = '3.1.0'
   s.summary          = 'Measure iAds attribution data with analytics-ios.'
 
   s.description      = <<-DESC
@@ -22,5 +22,5 @@ Analytics-iAds-Attribution requests iAd attribution information and sends a trac
 
   s.source_files = 'Analytics-iAds-Attribution/Classes/**/*'
 
-  s.dependency 'Analytics', '~> 3.6.0'
+  s.dependency 'Analytics'
 end

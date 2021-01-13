@@ -1,26 +1,32 @@
 PODS:
-  - Analytics (3.6.0)
-  - Analytics-iAds-Attribution (2.0.1):
-    - Analytics (~> 3.6.0)
-  - Expecta (1.0.5)
-  - Specta (1.0.6)
+  - Analytics (4.1.2)
+  - Analytics-iAds-Attribution (3.1.0):
+    - Analytics
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
 
 DEPENDENCIES:
-  - Analytics (= 3.6.0)
+  - Analytics
   - Analytics-iAds-Attribution (from `../`)
   - Expecta
   - Specta
+
+SPEC REPOS:
+  trunk:
+    - Analytics
+    - Expecta
+    - Specta
 
 EXTERNAL SOURCES:
   Analytics-iAds-Attribution:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Analytics: 15be3e651d22cc811f44df65698538236676437b
-  Analytics-iAds-Attribution: 1b318e87ec527a73a2419290128d6835686b7dd6
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
+  Analytics: 177da2c597aba83a6882b706ca6e0a071fd7cd26
+  Analytics-iAds-Attribution: 2c8621a8374325942cc8491e27f7ad07613b6142
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 072dfeae01d770684d03789212831987f310ad69
+PODFILE CHECKSUM: ac956fb9e762ffa4cdc0443ac50f0aaf523e29ba
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.10.1

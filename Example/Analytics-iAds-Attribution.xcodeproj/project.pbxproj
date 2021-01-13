@@ -22,10 +22,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8E0F501CDED62421A2337736 /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5198132FE0FF52E54CABB5E1 /* libPods-Analytics-iAds-Attribution_Tests.a */; };
 		9584075D1F2A6BF600A727B7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9584075C1F2A6BF600A727B7 /* AdSupport.framework */; };
 		9584075E1F2A6C0D00A727B7 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958407541F2A5D7900A727B7 /* iAd.framework */; };
-		C77AA50C2AD245BC2F75E7A5 /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829157BA6D089E989B962AEB /* libPods-Analytics-iAds-Attribution_Example.a */; };
+		A3FB7FACE68DFDA427241C56 /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 936A533F4D5E839C047A455C /* libPods-Analytics-iAds-Attribution_Example.a */; };
+		C8226D74BEC91BAA7706490B /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB5D82CCEB7E56FA8B0685 /* libPods-Analytics-iAds-Attribution_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DB5D82CCEB7E56FA8B0685 /* libPods-Analytics-iAds-Attribution_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		334A46C7B1653C53F18FD658 /* Analytics-iAds-Attribution.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Analytics-iAds-Attribution.podspec"; path = "../Analytics-iAds-Attribution.podspec"; sourceTree = "<group>"; };
-		5198132FE0FF52E54CABB5E1 /* libPods-Analytics-iAds-Attribution_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497FB0108AC2FB59BCE72834 /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Analytics-iAds-Attribution_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Analytics-iAds-Attribution_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,16 +61,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		68FA1F8A7B7060A45158B828 /* Pods-Analytics-iAds-Attribution_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Tests.release.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		829157BA6D089E989B962AEB /* libPods-Analytics-iAds-Attribution_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87A889A3B30947939F15867A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		909F30BF5CC29643614C69A4 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Example.release.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example.release.xcconfig"; sourceTree = "<group>"; };
+		936A533F4D5E839C047A455C /* libPods-Analytics-iAds-Attribution_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		958407541F2A5D7900A727B7 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		9584075C1F2A6BF600A727B7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		B861B1A0758F4D44A0F83412 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C07D4CA328DD61C08C3CE5BA /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D6CA851E017D226A42FDA1DF /* Pods-Analytics-iAds-Attribution_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F5F562BF7C980D74A8C9D153 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BD59591002C5B9D75399E2 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Example.debug.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F8610A9F409FEDBC05E25A88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +83,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				C77AA50C2AD245BC2F75E7A5 /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */,
+				A3FB7FACE68DFDA427241C56 /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,24 +94,13 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				8E0F501CDED62421A2337736 /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */,
+				C8226D74BEC91BAA7706490B /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CF9C8C159C187C7E409B42C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F5F562BF7C980D74A8C9D153 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */,
-				B861B1A0758F4D44A0F83412 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */,
-				C07D4CA328DD61C08C3CE5BA /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */,
-				D6CA851E017D226A42FDA1DF /* Pods-Analytics-iAds-Attribution_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +109,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				4CF9C8C159C187C7E409B42C /* Pods */,
+				F181A57EA7D821321CDCB8FD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +131,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				829157BA6D089E989B962AEB /* libPods-Analytics-iAds-Attribution_Example.a */,
-				5198132FE0FF52E54CABB5E1 /* libPods-Analytics-iAds-Attribution_Tests.a */,
+				936A533F4D5E839C047A455C /* libPods-Analytics-iAds-Attribution_Example.a */,
+				01DB5D82CCEB7E56FA8B0685 /* libPods-Analytics-iAds-Attribution_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,6 +193,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		F181A57EA7D821321CDCB8FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8BD59591002C5B9D75399E2 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */,
+				909F30BF5CC29643614C69A4 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */,
+				497FB0108AC2FB59BCE72834 /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */,
+				68FA1F8A7B7060A45158B828 /* Pods-Analytics-iAds-Attribution_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,12 +211,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Analytics-iAds-Attribution_Example" */;
 			buildPhases = (
-				A61485EAF4ABD5117CD4CA99 /* [CP] Check Pods Manifest.lock */,
+				2A42EE9FC4F0977C4CA3348C /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				BF4B15D1FC8F9E6D78E3F9DA /* [CP] Embed Pods Frameworks */,
-				C04DF01CE8FBCB18CE246F64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,12 +229,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Analytics-iAds-Attribution_Tests" */;
 			buildPhases = (
-				94F19441C330E7DE55357EE1 /* [CP] Check Pods Manifest.lock */,
+				07AFC1A17F6942C5B0064B03 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				C9A6265B685B0B7E2E132BD9 /* [CP] Embed Pods Frameworks */,
-				92BDB59CC26F6920CE0CFAB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SEGAD;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = f2prateek;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -268,7 +264,7 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Analytics-iAds-Attribution" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -308,94 +304,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		92BDB59CC26F6920CE0CFAB1 /* [CP] Copy Pods Resources */ = {
+		07AFC1A17F6942C5B0064B03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94F19441C330E7DE55357EE1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Analytics-iAds-Attribution_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A61485EAF4ABD5117CD4CA99 /* [CP] Check Pods Manifest.lock */ = {
+		2A42EE9FC4F0977C4CA3348C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Analytics-iAds-Attribution_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BF4B15D1FC8F9E6D78E3F9DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C04DF01CE8FBCB18CE246F64 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9A6265B685B0B7E2E132BD9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -495,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -542,7 +492,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5F562BF7C980D74A8C9D153 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */;
+			baseConfigurationReference = B8BD59591002C5B9D75399E2 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CL7W6YM8AN;
@@ -558,7 +508,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B861B1A0758F4D44A0F83412 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */;
+			baseConfigurationReference = 909F30BF5CC29643614C69A4 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CL7W6YM8AN;
@@ -574,7 +524,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C07D4CA328DD61C08C3CE5BA /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */;
+			baseConfigurationReference = 497FB0108AC2FB59BCE72834 /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -598,7 +548,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6CA851E017D226A42FDA1DF /* Pods-Analytics-iAds-Attribution_Tests.release.xcconfig */;
+			baseConfigurationReference = 68FA1F8A7B7060A45158B828 /* Pods-Analytics-iAds-Attribution_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

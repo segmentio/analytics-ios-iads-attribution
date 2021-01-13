@@ -1,8 +1,8 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'Analytics-iAds-Attribution_Example' do
   pod 'Analytics-iAds-Attribution', :path => '../'
-  pod 'Analytics', '3.6.0'
+  pod 'Analytics'
 
   target 'Analytics-iAds-Attribution_Tests' do
     inherit! :search_paths
