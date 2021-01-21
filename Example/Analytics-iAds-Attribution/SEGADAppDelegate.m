@@ -1,7 +1,12 @@
 #import "SEGADAppDelegate.h"
-#import <Analytics/SEGAnalytics.h>
-#import <Analytics-iAds-Attribution/SEGADTracker.h>
 
+#if __has_include(<Analytics/SEGAnalytics.h>)
+#import <Analytics/SEGAnalytics.h>
+#else
+#import <Segment/SEGAnalytics.h>
+#endif
+
+#import "SEGADTracker.h"
 
 @implementation SEGADAppDelegate
 

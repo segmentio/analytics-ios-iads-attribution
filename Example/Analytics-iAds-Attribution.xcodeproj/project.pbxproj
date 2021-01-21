@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F73840D9F85F6EB6BDB02FD /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EA53CEB1E42AE311B8F4EE /* libPods-Analytics-iAds-Attribution_Tests.a */; };
+		5C6C923A19FF988B57EA9B9B /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEAEB9175A8180E16041966 /* libPods-Analytics-iAds-Attribution_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -24,8 +26,6 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9584075D1F2A6BF600A727B7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9584075C1F2A6BF600A727B7 /* AdSupport.framework */; };
 		9584075E1F2A6C0D00A727B7 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958407541F2A5D7900A727B7 /* iAd.framework */; };
-		A3FB7FACE68DFDA427241C56 /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 936A533F4D5E839C047A455C /* libPods-Analytics-iAds-Attribution_Example.a */; };
-		C8226D74BEC91BAA7706490B /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB5D82CCEB7E56FA8B0685 /* libPods-Analytics-iAds-Attribution_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DB5D82CCEB7E56FA8B0685 /* libPods-Analytics-iAds-Attribution_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09EA53CEB1E42AE311B8F4EE /* libPods-Analytics-iAds-Attribution_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		334A46C7B1653C53F18FD658 /* Analytics-iAds-Attribution.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Analytics-iAds-Attribution.podspec"; path = "../Analytics-iAds-Attribution.podspec"; sourceTree = "<group>"; };
 		497FB0108AC2FB59BCE72834 /* Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Tests/Pods-Analytics-iAds-Attribution_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Analytics-iAds-Attribution_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Analytics-iAds-Attribution_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +66,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87A889A3B30947939F15867A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		909F30BF5CC29643614C69A4 /* Pods-Analytics-iAds-Attribution_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Example.release.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example.release.xcconfig"; sourceTree = "<group>"; };
-		936A533F4D5E839C047A455C /* libPods-Analytics-iAds-Attribution_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		958407541F2A5D7900A727B7 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		9584075C1F2A6BF600A727B7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B8BD59591002C5B9D75399E2 /* Pods-Analytics-iAds-Attribution_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics-iAds-Attribution_Example.debug.xcconfig"; path = "Target Support Files/Pods-Analytics-iAds-Attribution_Example/Pods-Analytics-iAds-Attribution_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BDEAEB9175A8180E16041966 /* libPods-Analytics-iAds-Attribution_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Analytics-iAds-Attribution_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8610A9F409FEDBC05E25A88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +83,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				A3FB7FACE68DFDA427241C56 /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */,
+				5C6C923A19FF988B57EA9B9B /* libPods-Analytics-iAds-Attribution_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				C8226D74BEC91BAA7706490B /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */,
+				0F73840D9F85F6EB6BDB02FD /* libPods-Analytics-iAds-Attribution_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +131,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				936A533F4D5E839C047A455C /* libPods-Analytics-iAds-Attribution_Example.a */,
-				01DB5D82CCEB7E56FA8B0685 /* libPods-Analytics-iAds-Attribution_Tests.a */,
+				BDEAEB9175A8180E16041966 /* libPods-Analytics-iAds-Attribution_Example.a */,
+				09EA53CEB1E42AE311B8F4EE /* libPods-Analytics-iAds-Attribution_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

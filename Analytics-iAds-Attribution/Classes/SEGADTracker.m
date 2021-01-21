@@ -1,7 +1,11 @@
 #import "SEGADTracker.h"
 #import <iAd/iAd.h>
-#import <Analytics/SEGAnalyticsUtils.h>
 
+#if __has_include(<Analytics/SEGAnalytics.h>)
+#import <Analytics/SEGAnalyticsUtils.h>
+#else
+#import <Segment/SEGAnalyticsUtils.h>
+#endif
 
 @implementation SEGADTracker
 
